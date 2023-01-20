@@ -71,3 +71,7 @@ INSERT INTO Sportsmen_competitions (Sportsman_ID, Competition_ID)
 
 -- SQL-запрос для выбора 5 спортсменов, посетивших соревнований больше остальных
 SELECT Sportsman_ID, COUNT(*) as cnt FROM Sportsmen_competitions GROUP BY Sportsman_ID ORDER BY cnt DESC LIMIT 5;
+
+-- Здесь выдаются ID, а не ФИО (хотя в phpMyAdmin видны и имена)
+-- Я догадываюсь, что для вывода ФИО нужно использовать INNER JOIN, но не особо умею использовать этот оператор
+-- Поэтому решила оставить так, чтобы было видно, на каком уровне я сейчас нахожусь
